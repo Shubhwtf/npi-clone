@@ -1,0 +1,78 @@
+.banner-services{
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;  
+    padding-left: 25%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    float: left;
+}
+.services-main{
+padding: 20px;
+margin-left: 5%;  
+margin-right: 5%;
+float: left;
+text-align: left;
+
+}
+.contentw{
+    font-size: 30px;
+}
+.headw{
+    font-size: 45px;
+    color: rgb(20, 20, 168);
+}
+.img-pass{
+  width: 100%;
+  height: auto;
+  border: 10px solid black;
+  padding: 20px;
+  align-items: right;
+
+}
+.img-pass{
+
+}
+.listedd{
+font-size: 40px;
+color: rgb(0, 0, 0);
+text-align: center;
+padding: 2%;
+background: #eeecec;
+}
+.headx{
+    font-size: 45px;
+    text-align: center;
+    color: rgb(20, 20, 168);
+    padding: 2%;
+}
+.sub-headx{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.heady{
+    font-size: 37px;
+    padding: 1%;
+    color: rgb(84, 161, 238);
+    
+}
+.sub-heady{
+    font-size: 25px;
+    padding: 1%;
+    color: rgb(10, 10, 10);
+    font-weight: lighter;
+}
+.hawa{
+    display: block;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+
+    
+}
+.img-hawa{
+   padding: 10px;
+
+}
