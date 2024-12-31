@@ -1,0 +1,443 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6; /* Improves text readability */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top Header */
+.top-header {
+    background-color: #f0f0f0;
+    padding: 8px 0; /* Adjusted padding */
+    font-size: 12px; /* Set font size */
+}
+
+.top-header .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-header a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.font-adjust {
+    margin: 0 10px;
+}
+
+.font-adjust button {
+    padding: 2px 6px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Main Nav */
+.main-nav {
+    background-color: white;
+    padding: 20px 0; /* Adjusted padding */
+    border-bottom: 3px solid #007bff; /* Blue underline */
+    margin: 20px;
+}
+
+.main-nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-title {
+    margin-left: 10px;
+    font-size: 1.5em; /* Use em for relative sizing */
+    font-weight: bold;
+    color: #004085; /* Darker blue for title */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px; /* Increased spacing */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 12px; /* Add padding for better click area */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.nav-links a:hover {
+    color: #007bff; /* Change text color on hover */
+    background-color: #f0f0f0; /* Add background color on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+
+/* Active Link */
+.nav-links a.active {
+    color: #007bff; /* Highlight active link */
+    font-weight: bold;
+}
+
+/* Search Section */
+.search-section {
+    background-color: #007bff;
+    padding: 15px 0; /* Adjusted padding */
+    color: white;
+}
+
+.search-section .container {
+    display: flex;
+    justify-content: space-between; /* Align search box and most searched side by side */
+    align-items: flex-start; /* Align items to the top */
+    position: relative; /* Ensure the container is positioned relative */
+}
+
+.search-bar {
+    flex: 1; /* Allow the search box to take up available space */
+    margin-right: 20px; /* Add spacing between search box and most searched */
+}
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255); /* White background for search bar */
+    padding: 5px;
+    border-radius: 5px;
+    width: 50%; /* Set width to half of the page */
+    margin-right: 20px;
+}
+
+.search-bar button {
+    background-color: #d3800b; /* Orange from the image */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0; /* Rounded right corners */
+}
+.search-bar a {
+    color: rgb(21, 5, 114);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.most-searched {
+    width: 500px; /* Set width of the section */
+    padding: 20px;
+    background-color: #062c66;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px 0;
+    display: flex;
+    gap: 30px; /* Increased gap */
+}
+
+.main-content-area {
+    flex: 2;
+}
+
+.main-content h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.main-content img {
+    max-width: 40%; /* Reduced image size */
+    float: left;
+    margin: 0 20px 10px 0; /* Adjusted margins */
+    border: 1px solid #ccc; /* Added border */
+    padding: 5px;
+}
+
+.main-content p {
+    text-align: justify;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    padding: 20px 0;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+}
+
+.sidebar h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .main-nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-left: 25px; /* Increased spacing */
+    }
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-content img {
+        max-width: 100%;
+        float: none;
+        margin: 0 0 10px;
+    }
+
+    .sidebar {
+        border-left: none;
+        border-top: 1px solid #ccc;
+        margin-left: 0;
+        padding-top: 10px;
+    }
+}
+.content-layout {
+    display: flex;
+    align-items: flex-start; /* Aligns items at the start */
+    height: 300px;
+    width: 600px;
+}
+
+.side-image {
+    width: 400px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+.container {
+    display: flex; /* Use flexbox for layout */
+}
+
+.main-content-area {
+    flex: 1; /* Allow main content to take available space */
+}
+
+.sidebar {
+    width: 250px; /* Set a fixed width for the sidebar */
+    margin-left: 20px; /* Space between main content and sidebar */
+}
+/* style.css */
+.categories-table {
+    margin-bottom: 20px; /* Add some space below the table */
+    margin-left: 40px;
+}
+
+.categories-table h2 {
+    font-size: 18px; /* Adjust the heading size if needed */
+}
+
+.categories-table table {
+    width: 60%; /* Reduce the width of the table */
+    font-size: 14px; /* Reduce the font size */
+    border-collapse: collapse; /* Remove spacing between cells */
+}
+
+.categories-table td {
+    padding: 8px; /* Reduce padding inside cells */
+    border: 1px solid #000000; /* Add borders for better visibility */
+}
+
+
+/* Optional: Zebra striping */
+.categories-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .categories-table td {
+        display: block; /* Stack on smaller screens */
+        width: 100%;
+        text-align: left;
+    }
+}
+/* style.css */
+footer {
+    background-color: #222; /* Darker background */
+    color: #ccc;
+    font-size: 13px;
+    padding: 20px 0;
+    line-height: 1.5;
+}
+
+.top-footer {
+    border-bottom: 1px solid #444;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.top-footer .container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.top-footer .container li {
+    margin: 0 15px;
+}
+
+.top-footer .container a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.main-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+.footer-column h3 {
+    color: #eee;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 6px;
+}
+
+.footer-column a {
+    color: #999; /* Lighter text color */
+    text-decoration: none;
+}
+.right-links {
+    flex: 0 0 auto; /* Prevent stretching of the right-links column */
+}
+
+.right-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.right-link img {
+    width: 24px; /* Slightly larger icons */
+    height: auto;
+    margin-right: 8px;
+}
+.right-link a {
+    color: #ccc;
+    font-weight: 500;
+}
+
+.bottom-footer {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; /* Vertically center items */
+    size: 20px;
+}
+
+.footer-info {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-info img {
+    max-width: 120px; /* Slightly larger logo */
+    margin-right: 15px;
+}
+.footer-info p {
+    font-size: 12px;
+}
+
+.last-updated {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;}
+
+    /* Using float (less recommended) */
+.most-viewed {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    float: right; /* Changed to float right */
+}
+
+.clear { /* Important for clearing the float */
+    clear: both;
+}
+
